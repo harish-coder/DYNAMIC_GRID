@@ -1,0 +1,35 @@
+<mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Column Customization
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div cdkDropListGroup>
+            <div class="example-container">
+              <h2>To do</h2>
+          
+              <div
+                cdkDropList
+                [cdkDropListData]="avaliableColumn"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of avaliableColumn" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+          
+            <div class="example-container">
+              <h2>Done</h2>
+              <div
+                cdkDropList
+                [cdkDropListData]="visibleColumn"
+                class="example-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let item of visibleColumn" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+          </div>
+    </mat-expansion-panel>
+</mat-accordion>

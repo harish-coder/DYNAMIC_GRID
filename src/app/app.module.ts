@@ -14,6 +14,7 @@ import { ColumnCustomizationComponent } from './components/column-customization/
 import { DynamicTableComponent } from './components/dynamic-table/dynamic-table.component';
 import { DemoMaterialModule } from './material-module';
 import { DataTableComponent } from './components/data-table/data-table.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DataTableComponent } from './components/data-table/data-table.component
     AppComponent,
     ColumnCustomizationComponent,
     DynamicTableComponent,
-    DataTableComponent
+    DataTableComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

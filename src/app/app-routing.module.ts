@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DataTableComponent } from './components/data-table/data-table.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
-  { path: 'dynamic-table', component: DataTableComponent },
+  { path: 'dynamic-table', component: HomeComponent },
 ];
 
 @NgModule({
